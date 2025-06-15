@@ -1,0 +1,33 @@
+{
+  "info": {
+    "name": "Login API - Test LG",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login exitoso",
+      "request": {
+        "method": "POST",
+        "header": [
+            { 
+            "key": "Content-Type", "value": "application/json" 
+            },
+            {
+            "key": "x-api-key",
+            "value": "reqres-free-v1"
+            }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"eve.holt@reqres.in\",\n  \"password\": \"cityslicka\"\n}"
+        },
+        "url": {
+          "raw": "https://reqres.in/api/login",
+          "protocol": "https",
+          "host": ["reqres", "in"],
+          "path": ["api", "login"]
+        }
+      }
+    }
+  ]
+}
